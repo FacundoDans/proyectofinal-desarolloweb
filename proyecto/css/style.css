@@ -1,0 +1,160 @@
+/*mobile last*/
+
+/*
+#8DAA91
+#788475
+#5E5D5C
+#453643
+#28112B
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+.header{
+    background-color:#8DAA91 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img{
+    width: 150px;
+    padding: 20px;
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+}
+
+.header li, .footer li{
+    margin: 10px;
+}
+
+.header a, .footer a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+.header a:hover, .footer a:hover{
+    color: #788475;
+    font-weight: bolder;
+}
+
+/*FOOTER*/
+
+.footer{
+    background-color: #8DAA91;
+
+}
+
+.footer ul{
+    display: flex;
+    list-style: none;
+    width: 450px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/*MAIN*/
+
+main{
+    min-height: 80vh;
+}
+
+h1{
+    border: black 3px solid;
+    padding: 12px 20px;
+    margin: 20px 10px 20px 10px;
+    background-color: #5E5D5C;
+    width: 480px;
+    height: 80px;
+    font-family: 'Shadows Into Light', cursive;
+        
+}
+
+ul{
+    border: black 2px dashed;
+    background-color: black;
+    padding: 30px;
+}
+
+li{
+    display: inline;
+}
+
+.bloque{
+    border: black 4px solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    background-color: #453643;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+/*BOTON*/
+
+.top{
+    background-color: #28112B;
+    color: white;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    border-radius: 60%;
+    position: sticky;
+    bottom: 0;
+    
+}
+
+/*GALERIA*/
+
+.grid-container{
+    max-width: 850px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    grid-row-gap: 30px;
+}
+
+.grid-container img{
+    width: 250px;
+    border-radius: 45%;
+}
+
+/*MEDIA QUERYS*/
+
+@media (max-width: 850px){
+    .grid-container{
+        grid-template-columns: (2,1fr);
+    }
+}
+
+
+@media (max-width: 680px){
+    .header{
+        flex-direction: column;
+    }    
+
+    .footer ul{
+        width: 180px;
+    }
+    .grid-container{
+        grid-template-columns: (1,1fr);
+    }
+}
