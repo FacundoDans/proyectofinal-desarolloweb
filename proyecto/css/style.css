@@ -79,6 +79,13 @@ h1{
         
 }
 
+h1:hover{
+    color: white;
+    text-decoration: underline;
+    transition: .4s;
+
+}
+
 ul{
     border: black 2px dashed;
     background-color: black;
